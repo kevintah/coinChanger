@@ -1,4 +1,4 @@
-//Kevin Njokom
+//Kevin Tah Njokom
 //12-8-2021
 //6:20 PM
 
@@ -107,16 +107,6 @@ function newAmount(maxValue,amount,allValues){					     // new amount and splice
     newAmountNow = ( amount - sub );
     amount = newAmountNow;
     allValues.splice(index, 1);
-    //console.log('multiplicativeFactor' + ' ' + 'is' + ' ' + multiplicativeFactor);
-    console.log("index:" +  " " +  index);
-    //console.log("numberOf:"+  " " + numberOf);
-    //console.log("sub:"+  " " +  amount);
-    //console.log("newAmount:"+  " " + newAmountNow);
-    //console.log("allValues"+  " " + allValues);
-    //console.log("maxValue"+  " " + maxValue);
-    console.log("amount"+  " " + amount);
-    //console.log("coinsChange"+  " " + coinsChange);
-
 
 }
 
@@ -147,7 +137,6 @@ function change(amount){									 //calculate
 
 	
     if(newAmount != 0  && allValues.length> 0){
-	//change(amount)
 	updateChange(index,coinsChange)
 	amount = newAmountNow.toFixed(2);
 	change(amount);
