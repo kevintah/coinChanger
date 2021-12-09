@@ -18,4 +18,4 @@ functions include
 
 --change(amount)
 
-		* Comments in the code and code have been written to render everything completely obvious.
+		* Comments in the code and code the have been written to render everything completely obvious to the code analyst.
