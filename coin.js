@@ -59,14 +59,13 @@ var count = 0;
 
 
 
-function findMax(allValues){							    		// Find the maximum
-
+function findMax(allValues){							    		
 	theMaxValue = Math.max(... allValues );
 	maxValue = theMaxValue;
 }
 
 
-function drop(allValues){											// if max is greater than amount
+function drop(allValues){											
 
 	if( maxValue > amount){
 
@@ -78,19 +77,19 @@ function drop(allValues){											// if max is greater than amount
 
 
 
-function divideIt(amount, maxValue){		                 		// Find number of coins for max denomination			  
+function divideIt(amount, maxValue){		                 					  
 
 	numberOf = Math.floor( amount / maxValue );
 
 }
 
 
-function updateIndex(maxValue){                          	 		// update index
+function updateIndex(maxValue){                          	 		
 	index = allValues.indexOf(maxValue);
 }
 
 
-function  updateChange(index,coinsChange){					 		// Update change 
+function  updateChange(index,coinsChange){					 		 
 
 	coinsChange[index].numCoins = numberOf;
 
@@ -99,7 +98,7 @@ function  updateChange(index,coinsChange){					 		// Update change
 
 
 
-function newAmount(maxValue,amount,allValues){					    // new amount and splice
+function newAmount(maxValue,amount,allValues){					    
     
     drop(allValues);
     multiplicativeFactor = coinsValues[index].value;
@@ -113,7 +112,7 @@ function newAmount(maxValue,amount,allValues){					    // new amount and splice
 
 
 
-function loadCoins(coinsValues){                            		 // Load coins
+function loadCoins(coinsValues){                            		 
 
 	for(var i = 0; i < coinsValues.length; i++){
 
@@ -123,7 +122,7 @@ function loadCoins(coinsValues){                            		 // Load coins
 	}
 
 
-function change(amount){									 		 //calculate 
+function change(amount){									 		  
 	
     if(count == 0){
 	loadCoins(coinsValues);
